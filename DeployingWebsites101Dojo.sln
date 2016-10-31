@@ -5,6 +5,12 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DeployingWebsites101Dojo", "DeployingWebsites101Dojo\DeployingWebsites101Dojo.csproj", "{CCB236E5-C79F-4570-A4B1-195717F90F96}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DA3D992B-2E4E-49F8-8A57-FD2B9B627666}"
+	ProjectSection(SolutionItems) = preProject
+		UpdateVersion.ps1 = UpdateVersion.ps1
+		Version.txt = Version.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
