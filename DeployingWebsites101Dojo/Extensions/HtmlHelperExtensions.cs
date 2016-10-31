@@ -22,5 +22,14 @@ namespace DeployingWebsites101Dojo.Extensions
 
             return localIP;
         }
+
+        public static string VersionInformation(this HtmlHelper helper)
+        {
+            var version = System.Reflection.Assembly.GetExecutingAssembly().GetName().Version;
+
+            var versionString = string.Format("{0}", version.ToString(4));
+
+            return versionString;
+        }
     }
 }

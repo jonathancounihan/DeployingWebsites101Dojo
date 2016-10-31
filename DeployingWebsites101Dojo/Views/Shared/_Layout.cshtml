@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using DeployingWebsites101Dojo.Extensions
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -23,7 +24,13 @@
     <div class="container body-content">
         @RenderBody()
         <hr />
-        <footer></footer>
+        <footer>
+            <div class="row">
+                <div class="col-lg-offset-11 col-lg-1">
+                    @Html.VersionInformation()
+                </div>
+            </div>
+        </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
