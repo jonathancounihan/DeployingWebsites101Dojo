@@ -76,7 +76,7 @@ if ($oldVersionNumber -ne $newVersionNumber) {
 
 	Write-Host ("Getting files to update...")
 
-	$files = Get-ChildItem -Include $filename -Recurse -ErrorAction 'SilentlyContinue'
+	$files = Get-ChildItem -Path $workingDirectory -Include $filename -Recurse -ErrorAction 'SilentlyContinue'
 
 	Write-Host ("Updating version number in {0} files..." -f $files.Length)
 
