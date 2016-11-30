@@ -45,6 +45,23 @@
                 <p class="form-control-static">@Html.ViewContext.RequestContext.HttpContext.Request.IsSecureConnection</p>
             </div>
         </div>
-
+        <div class="form-group">
+            <label class="control-label col-sm-4">Colour Setting</label>
+            <div class="col-sm-3">
+                <div style="margin-top: 5px;color: @Html.GetColourSetting();background-color:@Html.GetColourSetting()">&nbsp;</div>
+            </div>
+        </div>
     </form>
 </div>
+
+@*
+    <style>
+        .jumbotron {
+            background-color: blue;
+        }
+
+            .jumbotron h1 {
+                color: deeppink;
+            }
+    </style>
+*@

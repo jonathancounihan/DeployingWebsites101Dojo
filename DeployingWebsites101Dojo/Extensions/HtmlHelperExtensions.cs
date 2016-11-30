@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
@@ -30,6 +31,11 @@ namespace DeployingWebsites101Dojo.Extensions
             var versionString = string.Format("{0}", version.ToString(4));
 
             return versionString;
+        }
+
+        public static String GetColourSetting(this HtmlHelper helper)
+        {
+            return ConfigurationManager.AppSettings["ColourSetting"];
         }
     }
 }
